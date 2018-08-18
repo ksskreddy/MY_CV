@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{resume} % Use the custom resume.cls style 
+
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{KARRI SAI SATISH KUMAR REDDY} % Your name 
+\address{COMPUTER SCIENCE AND ENGINEERING \\ BTECH 4Y} % Your address 
+%\address{123 Pleasant Lane  City, State 12345} % Your secondary addess (optional) 
+\address{+91 9932028385 \\ ksskreddy2015@gmail.com} % Your phone number and email
+
+\begin{document}  
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Bachelor Of Technology In Computer Science And Engg} \hfill {July 2015 - present}
+\\ 
+Indian Institute of Technology,Kharagpur, CGPA: 9.01/10.00   
+
+{\bf Intermediate Education, Class XII} \hfill {June 2013 - April 2015}
+\\ 
+Narayana Junior College,Andhra Pradesh, 97.4\%
+
+{\textbf{SSC, Class X}}  \hfill{March 2012 - March 2013}\\
+Pragathi Little Public School,Andhra Pradesh, 9.7/10.0    
+%Minor in Linguistics \smallskip \\
+%Member of Eta Kappa Nu \\
+%Member of Upsilon Pi Epsilon \\
+
+
+\end{rSection} 
+
+%-----------------------------------------------------------------------------
+ % WORK EXPERIENCES
+ %-----------------------------------------------------------------------------
+  
+\begin{rSection}{WORK EXPERIENCES}
+
+\begin{rSubsection}{Software Engineering Intern , Intuit }{May 2018 - July 2018}{\textbf{Aurora Adaptor}}{}              
+\item Involved in design and development of a module called adaptor which consumes data from Aurora mysql database instances using
+Debezium,a kafka connect based platform.
+\item The designed Adaptor was fault tolerant,highly available and can be used for any mysql database. 
+\item Used SMT to convert  the consumed data to required schema and pushed to kafka in real time.
+\end{rSubsection}  
+
+%------------------------------------------------
+\end{rSection}
+
+
+%--------------------------------------------------------------------------------------
+%  COMPETITIONS
+%--------------------------------------------------------------------------------------
+\begin{rSection}{ PROGRAMMING ACHEIVEMENTS } \itemsep -3pt        
+
+\item Stood 231st in \textbf{ACM-ICPC(2017) Online Qualifiers} which had a participation of around 3300 teams
+\item Runner-up in the event \textbf{SourceCode}, held in Kshitij 2018, IIT Kharagpur
+\item Bagged 3rd position in \textbf{CodersBit} conducted by InterviewBit among all students of IIT Kharagpur
+\item Qualified for the \textbf{SnackDown 2017 Online Elimination Round}(pre-final)  by competing with 3300 teams
+ 
+\end{rSection}
+
+
+\begin{rSection}{ ACADEMIC ACHEIVEMENTS } \itemsep -3pt        
+
+\item Secured 8th Rank in JEE ADVANCED 2015 in OC-PH category.
+\item Secured 1st Rank in JEE MAINS(B.Tech) 2015 in OC-PH category with a percentile of 99.33.
+\item Secured a rank of 662 in APEAMCET 2015 in General Category. 
+\end{rSection}
+
+
+\begin{rSection}{PERSONAL PROJECTS}
+
+\begin{rSubsection}{In-tweeto-lysis , Intuit } {July 2018}{Intuit interns' hackathon}{} 
+\item Implemented an ML Model which classifies the real time tweets on intuit into different teams to which it is most suited with an accuracy of about 90\%.           
+\item Used sentimental analysis to get the most negative tweets so that the respective team can be alerted.
+\item Generated a real time piechart which depicts the statistics of negative and positive tweets each team got.     
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{SKILLS AND EXPERTISE}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+Languages &  Fluent in C, C++ :  Experienced in Python,Java\\    
+Tools/Libraries & Experienced in TensorFlow, Git, NumPy, Pandas, MySQL, AWS, Docker,\\& Kafka, Confluent, Android Studio \\      
+ 
+\end{tabular}   
+
+\end{rSection}
+
+  
+\newpage
+
+%-------------------------------------------------------------------------------
+%	PROJECTS
+
+\begin{rSection}{ACADEMIC PROJECTS}
+
+\begin{rSubsection}{Hospital Management System} {March 2017}{\textbf{Software Engineering Lab}}{}
+
+\item Developed a software in java using Swing Package which can be used by Doctors, Patients and Receiptionist.
+\item Functionalities include  registration-login module for every user, generate the medical bills, assign doctors to patients,write report to the patients,view the Doctor's Report and Bills paid.
+\end{rSubsection}  
+
+%------------------------------------------------
+
+\begin{rSubsection}{Amazon Outlivers} {Sep 2017 - Nov 2017}{\textbf{Intelligent Game Design}}{}
+
+\item Developed a 3D survival game with Unity using various AI techniques to generate intelligent behaviors in \\non-player characters (animals).
+\item Implemented path planning using A-star,priority based blending of steering behaviours,movement algorithms like seek,flee,wander etc and collision avoidance using ray casting.
+\end{rSubsection}  
+
+
+%-------------------------------------------------
+
+
+\begin{rSubsection}{Ray Tracing on triangle meshes} {March 2018 - April 2018}{\textbf{Computer Graphics }}{}
+
+\item Generated an animated GIF by using ray tracing on the objects in the scene while rotating them smoothly.
+\item Implemented Ambient,Spherical,Diffuse Illuminations along with shadows for realistic effect.
+\end{rSubsection}  
+
+
+%-------------------------------------------------- 
+
+\begin{rSubsection}{Memory Resident Unix like File-System } {March 2018}{\textbf{Operating Systems Lab}}{}
+
+\item Implemented a memory resident Unix-Like file system (MRFS) that can be accessed using a library of APIs in C.
+\item The APIs include creating a file system, copy files from disk to file system and vice versa, create, open, read, write and remove files, create,
+remove and change directories, change permissions for files etc.
+\end{rSubsection}  
+
+\begin{rSubsection}{Transport Wrapper} {March 2018}{\textbf{Networks Lab}}{}
+
+\item Designed and implemented a transport layer wrapper similar to google's QUIC protocol using socket programming.
+\item Implemented flow control, congestion control following various optimizations like slow start, fast recovery,\\fast retransmission over UDP services.
+\end{rSubsection}  
+
+
+\end{rSection} 
+
+
+
+
+
+
+
+
+
+
+
+%	COURSEWORK INFORMATION 
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{COURSEWORK INFORMATION} \itemsep -3pt  
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+Completed &  Algorithms*, Software Engineering*, Operating Systems*, Computer Graphics*, \\& Computer Networks*,Machine Learning,Intelligent Game Design, Compilers*,\\& Computer Organisation and Architecture*, Discrete Structures\\    
+Ongoing & Artificial Intelligence, Theory of Computation, Parallel and Distributed Algorithms,\\& Image Processing \\
+Online & Deep Learning (Specialisation),Machine Learning (Coursera), App Development(Udacity).
+ 
+\end{tabular}   
+
+* marked courses had a laboratory component as well
+
+\end{rSection}  
+ 
+ 
+
+%--------------------------------------------------------------------------------------
+% Extra-Cirrucular
+%--------------------------------------------------------------------------------------
+
+\begin{rSection}{Extra-Cirrucular} \itemsep -2pt   
+
+
+\item As a Member of National Sports Organisation - Health and Fitness,participated in activities like Run for Unity,Yoga,\\Awareness Programme on Disaster Management etc.
+
+\item Member of Open-Soft and Web Design Team,LBS Hall of Residence.
+
+\end{rSection} 
+
+%---------------------------------------------------------------------------------
+%  DECLARATION
+%--------------------------------------------------------------------------------
+
+\begin{rSection}{ Declaration  } \itemsep -3pt        
+
+\item I hereby declare that all the details furnished above are true to the best of my knowledge and belief.   
+  
+\end{rSection}
+\end{document}
