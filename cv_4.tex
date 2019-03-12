@@ -19,9 +19,9 @@
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
 %----------------------------------------------------------------------------------------
- 
-\documentclass{resume} % Use the custom resume.cls style 
 
+\documentclass{resume} % Use the custom resume.cls style 
+\usepackage{hyperref} 
 \usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
@@ -40,7 +40,7 @@
 
 {\bf Bachelor Of Technology In Computer Science And Engg} \hfill {July 2015 - present}
 \\ 
-Indian Institute of Technology,Kharagpur, CGPA: 9.01/10.00   
+Indian Institute of Technology,Kharagpur, CGPA: 9.08/10.00   
 
 {\bf Intermediate Education, Class XII} \hfill {June 2013 - April 2015}
 \\ 
@@ -77,9 +77,11 @@ Debezium,a kafka connect based platform.
 %--------------------------------------------------------------------------------------
 \begin{rSection}{ PROGRAMMING ACHEIVEMENTS } \itemsep -3pt        
 
-\item Stood 231st in \textbf{ACM-ICPC(2017) Online Qualifiers} which had a participation of around 3300 teams
+\item Stood \textbf{52nd} in \textbf{ACM-ICPC(2018) Online Qualifiers} and qualified for the Amritapuri Regionals 
+\item Ranked \textbf{83rd} in the \textbf{Amritapuri onsite regionals} of ACM ICPC 2018.
 \item Runner-up in the event \textbf{SourceCode}, held in Kshitij 2018, IIT Kharagpur
 \item Bagged 3rd position in \textbf{CodersBit} conducted by InterviewBit among all students of IIT Kharagpur
+\item Stood 81st in \textbf{CodersBit Finale} conducted by InterviewBit among the top 1200 finalists.
 \item Qualified for the \textbf{SnackDown 2017 Online Elimination Round}(pre-final)  by competing with 3300 teams
  
 \end{rSection}
@@ -93,15 +95,7 @@ Debezium,a kafka connect based platform.
 \end{rSection}
 
 
-\begin{rSection}{PERSONAL PROJECTS}
 
-\begin{rSubsection}{In-tweeto-lysis , Intuit } {July 2018}{Intuit interns' hackathon}{} 
-\item Implemented an ML Model which classifies the real time tweets on intuit into different teams to which it is most suited with an accuracy of about 90\%.           
-\item Used sentimental analysis to get the most negative tweets so that the respective team can be alerted.
-\item Generated a real time piechart which depicts the statistics of negative and positive tweets each team got.     
-\end{rSubsection}
-
-\end{rSection}
 
 
 %----------------------------------------------------------------------------------------
@@ -112,27 +106,47 @@ Debezium,a kafka connect based platform.
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
 Languages &  Fluent in C, C++ :  Experienced in Python,Java\\    
-Tools/Libraries & Experienced in TensorFlow, Git, NumPy, Pandas, MySQL, AWS, Docker,\\& Kafka, Confluent, Android Studio \\      
+Tools/Libraries & Experienced in TensorFlow, Git, NumPy, Pandas, MySQL, AWS, Docker,\\& Kafka, Confluent, Android Studio, Django \\      
  
 \end{tabular}   
 
 \end{rSection}
 
   
-\newpage
 
 %-------------------------------------------------------------------------------
 %	PROJECTS
 
 \begin{rSection}{ACADEMIC PROJECTS}
 
-\begin{rSubsection}{Hospital Management System} {March 2017}{\textbf{Software Engineering Lab}}{}
+% \begin{rSubsection}{Hospital Management System} {March 2017}{\textbf{Software Engineering Lab}}{}
 
-\item Developed a software in java using Swing Package which can be used by Doctors, Patients and Receiptionist.
-\item Functionalities include  registration-login module for every user, generate the medical bills, assign doctors to patients,write report to the patients,view the Doctor's Report and Bills paid.
-\end{rSubsection}  
+% \item Developed a software in java using Swing Package which can be used by Doctors, Patients and Receiptionist.
+% \item Functionalities include  registration-login module for every user, generate the medical bills, assign doctors to patients,write report to the patients,view the Doctor's Report and Bills paid.
+% \end{rSubsection}  
 
 %------------------------------------------------
+
+\begin{rSubsection}{Memory Resident Unix like File-System } {March 2018}{\textbf{Operating Systems Lab}}{}
+
+\item Implemented a memory resident Unix-Like file system (MRFS) supporting multiple users that can be accessed using a library of APIs in C.
+\item The APIs include all the standard unix file operations,copying files between the file system and PC file system and dumping it to PC file system and restoring from it etc.
+\end{rSubsection}  
+
+\begin{rSubsection}{Transport Wrapper} {March 2018}{\textbf{Networks Lab}}{}
+
+\item Implemented an modular Transport layer wrapper on top of unreliable UDP protocol for reliable data
+transfer using socket programming.
+\item Implemented flow control, congestion control following various optimizations like slow start, fast recovery,\\fast retransmission over UDP services.
+\end{rSubsection}  
+
+
+\begin{rSubsection}{Motion Clustering} {March 2018 - Present }{\textbf{Bachelor Thesis}}{}
+
+\item Implemented a model to cluster similar motion frames in a dance video and obtained an accuracy of 80\%.
+\item Used \textbf{Dynamic Time Warping}(DTW) for measuring similarity between two motion frames and \textbf{Spectral Clustering} for clustering them.
+\end{rSubsection}  
+
 
 \begin{rSubsection}{Amazon Outlivers} {Sep 2017 - Nov 2017}{\textbf{Intelligent Game Design}}{}
 
@@ -153,25 +167,21 @@ Tools/Libraries & Experienced in TensorFlow, Git, NumPy, Pandas, MySQL, AWS, Doc
 
 %-------------------------------------------------- 
 
-\begin{rSubsection}{Memory Resident Unix like File-System } {March 2018}{\textbf{Operating Systems Lab}}{}
 
-\item Implemented a memory resident Unix-Like file system (MRFS) that can be accessed using a library of APIs in C.
-\item The APIs include creating a file system, copy files from disk to file system and vice versa, create, open, read, write and remove files, create,
-remove and change directories, change permissions for files etc.
-\end{rSubsection}  
-
-\begin{rSubsection}{Transport Wrapper} {March 2018}{\textbf{Networks Lab}}{}
-
-\item Designed and implemented a transport layer wrapper similar to google's QUIC protocol using socket programming.
-\item Implemented flow control, congestion control following various optimizations like slow start, fast recovery,\\fast retransmission over UDP services.
-\end{rSubsection}  
 
 
 \end{rSection} 
 
 
 
+\begin{rSection}{OTHER PROJECTS}
 
+\begin{rSubsection}{FightForge , Smart India Hackathon} {March 2019}{Fake currency notes detector}{}
+\item Developed an android app which uses Image Processing to detect whether the note was fake or real which bagged first prize at Smart India hackathon.           
+\item The user can upload the currency note pic and the app would verify its authenticity using 25 features extracted from front and rear side of the currency note.
+\end{rSubsection}
+
+\end{rSection}
 
 
 
@@ -185,9 +195,9 @@ remove and change directories, change permissions for files etc.
 \begin{rSection}{COURSEWORK INFORMATION} \itemsep -3pt  
 
 \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
-Completed &  Algorithms*, Software Engineering*, Operating Systems*, Computer Graphics*, \\& Computer Networks*,Machine Learning,Intelligent Game Design, Compilers*,\\& Computer Organisation and Architecture*, Discrete Structures\\    
-Ongoing & Artificial Intelligence, Theory of Computation, Parallel and Distributed Algorithms,\\& Image Processing \\
-Online & Deep Learning (Specialisation),Machine Learning (Coursera), App Development(Udacity).
+Completed &  Algorithms*, Software Engineering*, Operating Systems*, Computer Graphics*, \\& Computer Networks*,Machine Learning,Intelligent Game Design, Compilers*,\\& Computer Organisation and Architecture*, Discrete Structures,Parallel Algorithms,\\& Cryptography\\
+Ongoing & Distributed Systems, Cloud Computing, Educational Data Analytics.\\
+Online & Machine Learning (Coursera), App Development(Udacity).
  
 \end{tabular}   
 
@@ -201,22 +211,16 @@ Online & Deep Learning (Specialisation),Machine Learning (Coursera), App Develop
 % Extra-Cirrucular
 %--------------------------------------------------------------------------------------
 
-\begin{rSection}{Extra-Cirrucular} \itemsep -2pt   
+\begin{rSection}{Links/Handle} \itemsep -2pt   
+\item Codechef : \href{https://www.codechef.com/users/ksskreddy2015}{ksskreddy2015}
+\item Hackerrank : \href{https://www.hackerrank.com/Namakian}{Namakian}
+\item Linkedin : \href{https://www.linkedin.com/in/karri-sai-satish-kumar-reddy-5548b1117/}{Satish}
 
+\item Github :\href{https://github.com/ksskreddy}{ksskreddy}
 
-\item As a Member of National Sports Organisation - Health and Fitness,participated in activities like Run for Unity,Yoga,\\Awareness Programme on Disaster Management etc.
-
-\item Member of Open-Soft and Web Design Team,LBS Hall of Residence.
 
 \end{rSection} 
 
-%---------------------------------------------------------------------------------
-%  DECLARATION
-%--------------------------------------------------------------------------------
-
-\begin{rSection}{ Declaration  } \itemsep -3pt        
-
-\item I hereby declare that all the details furnished above are true to the best of my knowledge and belief.   
   
-\end{rSection}
+
 \end{document}
