@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% Website: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome5}
+\usepackage[T1]{fontenc}
+\newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{0pt}}
+  }
+}
+
+\newcommand{\customresumeItem}[1]{
+  \item\small{
+    #1
+  }
+}
+
+\newcommand{\myresumeSubItem}[3]{
+\item\small{
+    \textbf{#1}, \textit{\small #2}{: #3 \vspace{-6pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\customresumeSubheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubSubheading}[1]{
+    \vspace{0.05pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[itemsep=0.01pt, leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize} \vspace{-8pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0.01pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}  \vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://www.linkedin.com/in/satish0208/}{\Large Karri Sai Satish Kumar Reddy}} & Email : \href{mailto:ksskreddy2015@gmail.com}{ksskreddy2015@gmail.com}\\
+  Mobile : +91-9932028385 & LinkedIn : \href{https://www.linkedin.com/in/satish0208/}{satish0208} \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Technology Kharagpur}{Kharagpur, India}
+      {Bachelor Of Technology in Computer Science And Engineering; CGPA: 9.08/10}{July 2015 -- July 2019}
+  \resumeSubHeadingListEnd
+  \vspace{5pt}
+
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cohesity}{Bangalore, India}
+      {Research Engineer}{July 2019 - Present}
+         \resumeSubSubheading{\textbf{Object Based Backups (DMaaS)}}
+             \resumeItemListStart
+             \customresumeItem
+             {Involved in design and development of object based backups which is the prime feature in the initial offering of \textbf{DMaaS(Data Management as a Service)}.}
+            \customresumeItem
+             {As part of Magneto-Infra team, involved in delivering various performance/scale improvements in the control path operations for performing the backups/restores.}
+             \customresumeItem
+             {Currently working on the project \textbf{DRaaS(Disaster Recovery as a Service)} which is one of the next biggest upcoming feature.}
+             \resumeItemListEnd
+      
+        \resumeSubSubheading{\textbf{Pulse}}
+             \resumeItemListStart
+             \customresumeItem
+             {Involved in redesigning of a service called Pulse(Progress monitoring service) which used to cause various scale issues like UI slowness and stalling of backups in large deployments.}
+             \customresumeItem
+             {Massively parallelized the operations of pulse by implementing fine grained locking, flow control, client/server side batching, caching which resulted in improving the overall service performance by 60\%.}
+             \resumeItemListEnd
+        \vspace{5pt}
+        
+
+    \resumeSubheading
+      {Intuit}{Bangalore, India}
+      {Software Engineering Intern}{May 2018 - July 2018}
+        \resumeSubSubheading
+        {\textbf{Aurora Adapter}}
+        \resumeItemListStart
+            \customresumeItem
+             {Involved in design and development of a module called adaptor which consumes data from Aurora mysql database instances using Debezium,a kafka connect based platform.}
+             \customresumeItem
+             {The designed Adaptor was fault tolerant,highly available and can be used for any mysql database.}
+             \customresumeItem
+             {Used SMT to convert the consumed data to required schema and pushed to kafka in real time.}
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  \vspace{5pt}
+
+
+%-----------PROJECTS-----------------
+\section{Academic Projects}
+  \resumeItemListStart
+   
+   \resumeItem{Motion Clustering}{\textit{Bachelors Thesis }Clustering of similar motions in the given Bharatanatyam dance video. Achieved an accuracy of 80\% by using DTW as similarity measure and spectral clustering. \href{https://github.com/ksskreddy/BTP}{\hspace{0.5ex}\faGithub}}
+    \resumeItem{Flamingo}
+      {Distributed cluster middleware system for job submission and monitoring.It performs Job scheduling, starvation free match-making, job premption and migration.\href{https://github.com/ranjithkumar007/flamingo}{\hspace{0.5ex}\faGithub}}
+    \resumeItem{TransWrapper}
+      {Google QUIC like modular transport layer wrapper on top of UDP.Implemented 
+flow control, congestion control following optimizations like slow start, fast recovery etc over the UDP protocol.}
+      \resumeItem{File System}{Implemented a memory resident Unix-Like file system (MRFS) supporting multiple users which provides all the standard linux file operations. \href{https://github.com/Suriya17/MRFS}{\hspace{0.5ex}\faGithub}}
+
+  \resumeItemListEnd
+  \vspace{5pt}
+  
+%--------ACHIEVEMENTS------------------
+
+\section{Achievements}
+
+   \resumeItemListStart
+   \customresumeItem
+   {Nominated as the best performer and received Top Gun Manverick Award for a quarter in Cohesity.}
+   \customresumeItem
+   {Received the prestigious \textbf{CHAIRMAN BOARD OF GOVERNORS GOLD MEDAL} on 65th convocation of IIT Kharagpur for being best all-rounder performer under disabled category.}
+   \customresumeItem
+   {Stood \textbf{52nd} in \textbf{ACM-ICPC(2018) Online Qualifiers} and qualified for the Amritapuri Regionals}
+   \customresumeItem
+   {Ranked \textbf{83rd} in the \textbf{Amritapuri onsite regionals} of ACM ICPC 2018.}
+   \customresumeItem
+   {Secured \textbf{8th} Rank in \textbf{JEE ADVANCED 2015} in OC-PH category.}
+   \resumeItemListEnd
+%
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+   \item[]{
+     \textbf{Languages}{: Fluent in C, CPP, Experienced in Golang, Python, Java.} \\
+     \textbf{Tools/Libraries}{: Experienced in Protocol Buffers, Git, AWS, Docker, Kafka, Confluent}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
